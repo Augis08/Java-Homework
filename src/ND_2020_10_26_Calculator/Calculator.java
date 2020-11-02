@@ -24,7 +24,7 @@ public class Calculator {
         int result = calculation;
         for (int i = 1; i < numbers.length; i++) {
             if (operators[i].equals("*")) {
-                calculation = Integer.parseInt(numbers[i]) * Integer.parseInt(numbers[i - 1]);
+                calculation *= Integer.parseInt(numbers[i]);
             } else if (operators[i].equals("/")) {
                 if (Integer.parseInt(numbers[i]) == 0) {
                     System.out.println("-1" + " (Division from zero is not possible.");
